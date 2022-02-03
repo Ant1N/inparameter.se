@@ -1,0 +1,167 @@
+/* BaseClrs */
+/* whiteish = #e0e0e0 */
+/* Darkish =  #161616 */
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: 'Neutral Face';
+    color: #161616;
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    position:fixed;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 100;
+}
+.header .menu{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.header .logo img{
+    margin-left: -20px;
+    max-width: 250px;
+}
+.header .menu{
+    margin-right: 20px;
+}
+
+.container{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container .container-row{
+    display: flex;
+    height: 150px;
+    margin: 20px 0px;
+}
+.container-row img{
+    height: 175px;
+    margin-top: 10px ;
+}
+.container-row h1,
+.container-row h2{
+    font-size: 120px;
+    margin: 0px 50px;
+    cursor: pointer;
+}
+.container-row h1{
+    font-family: 'Kenoky';
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 140px;
+}
+.quote{
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    height: 60px;
+    width: max-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.quote h1{
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.svg{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.svg img{
+    width: 150px;
+    filter: invert(.2);
+    animation: animate 8s linear infinite;
+}
+@keyframes animate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+.menu-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #e0e0e0;
+    color: #161616;
+    transform: translateY(1000px);
+    opacity: 0;
+}
+.menu-container .menu-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+}
+.menu-items li{
+    font-size: 150px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 5px 0px;
+    font-family: 'Kenoky';
+    font-style: italic;
+    transition: .1s all cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    color: #161616;
+    cursor: pointer;
+}
+.menu-items li:hover{
+    color: #666666;
+    transition: .1s all cubic-bezier(0.755, 0.05, 0.855, 0.06);
+}
+.socials{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    width: 100%;
+    height: 80px;
+}
+.socials ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+.socials ul li a{
+    text-decoration: none;
+    color: #161616;
+    font-size: 24px;
+    cursor: pointer;
+}
+.socials ul li:hover{
+    text-decoration: .5px underline #7c7c7c;
+}
