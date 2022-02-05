@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inparameter</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="canonical" href="http://inparameter.se/">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </head>
+  <body>
+    <div class="header">
+        <div class="logo"><img src="assets/black_inparameter.png" alt="inparameter logo"></div>
+        <div class="menu" onclick="menu()">Menu</div>
+      </div>
+      <div class="contact-container">
+          <h1 class="contact-page-h1 info-h1">Hello</h1>
+          <h3 class="contact-page-h3">If you have any inquries, please fill out the form or contact us at the email below.</h3>
+      </div>
+      <div class="popup">
+        <div class="popup-btn" onclick="open_pop()">
+            Contact us
+        </div>
+        <div class="popup-template">
+            <div class="popup-close" onclick="close_pop()">
+                <ion-icon name="close-outline"></ion-icon>
+            </div>
+            <div class="popup-top">
+                <h1>Contact us</h1>
+                <p>Send us your request and we will be back with you shortly!</p>
+
+            </div>
+            <div class="popup-form">
+                <div class="form-row">
+                    <div class="form-row1">
+                        <h1>First Name</h1>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-row1">
+                        <h1>Last Name</h1>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-row1">
+                        <h1>Email</h1>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div class="form-row1">
+                        <h1>Phone</h1>
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-row1">
+                        <h1>Address</h1>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <div class="form-row1">
+                        <h1>Message</h1>
+                        <textarea name="" id=""></textarea>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-row1"><button class="submit-popup">Submit</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-page">
+        <div class="email block">
+            <h1 class="contact-page-h1 present">Email</h1>
+            <h1 class="contact-page-h1 contact-page-hover">hello@inparameter.se</h1>
+        </div>
+    </div>
+    </div>
+    <div class="menu-container">
+        <div class="menu-items">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+            <li><a href=contact.html>Contact</a></li>
+          </ul>
+        </div>
+        <div class="socials">
+            <ul>
+                <li><a href="http://linkedin.com/">Linkedin</a></li>
+                <li><a href="http://facebook.com/">Facebook</a></li>
+                <li><a href="mailto:hello@inparameter.se">Email us</a></li>
+                <li><a href="http://linkedin.com/">Linkedin</a></li>
+            </ul>
+        </div>
+      </div>
+    <script src="script.js"></script>
+  </body>
+</html>
